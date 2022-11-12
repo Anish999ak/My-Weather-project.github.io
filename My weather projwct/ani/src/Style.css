@@ -1,0 +1,150 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    background-color: gray;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+}
+
+.wrap{
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+
+.search{
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchTerm{
+    width:50%;
+    flex: 1 70%;
+    border: none;
+    height:25px;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    height: 30px;
+    background-color: rgb(107, 107, 160);
+    border: none;
+    width: 50%;
+    border-bottom-right-radius:5px ;
+    border-top-right-radius:5px ;
+    flex: 1 30%;
+}
+
+.widget{
+    display: flex;
+    height: 400px;
+    width:650px;
+    background-color: gray;
+    box-shadow: 0 17px 17px 0 gray, 0 55px 55px 0 black;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.weather-icon{
+    font-size: 120px;
+    display: flex;
+    flex: 1 100%;
+    background-color: aliceblue;
+    height:50%;
+    justify-content: center;
+    place-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.weatherinfo{
+    display:flex;
+    flex: 0 70%;
+    height:40%;
+    background-color: black;
+    color:white;
+}
+
+.temp{
+    display: flex;
+    flex: 0 50%;
+    place-items: center;
+
+}
+
+.temp span{
+    margin-left: 15px;
+    font-size: 80px;
+}
+
+.weatherdetaile{
+    display: flex;
+    flex: 0 50%;
+    place-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.weathercondition{
+    font-size: 80px;
+}
+
+.date{
+    display:flex;
+    background-color: aqua;
+    flex: 0 30%;
+    height:40%;
+    justify-content: space-around;
+    place-items: center;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.widget .extra-temp {
+    flex: 1 100%;
+    padding: 5% 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #fafafa;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    font-size: 100px;
+  }
+  
+  .widget .extra-temp p {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .temp-info-minmax,
+  .weather-extra-info,
+  .two-sided-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+    color: #70c1b3;
+    /* background-color: blanchedalmond; */
+  }
+   
+  .widget .extra-temp .extra-info-leftside {
+    text-align: left;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #080705;
+    font-size: 15px;
+  }
+  
